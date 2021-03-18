@@ -22,11 +22,10 @@ public class Mover : MonoBehaviour
 
         //Make our velocity faster depending on acceleration and frame rate
         Vector2 newVelocity = myRigidbody2D.velocity +
-            (direction * acceleration * Time.deltaTime);
+            (direction * acceleration);
 
         //Set maximum speeds in both directions
         newVelocity.x = Mathf.Clamp(newVelocity.x, -maximumSpeed, maximumSpeed);
-        newVelocity.y = Mathf.Clamp(newVelocity.y, -maximumSpeed, maximumSpeed);
 
         myRigidbody2D.velocity = newVelocity;
     }
