@@ -7,6 +7,14 @@ public class AddScoreOnTrigger : MonoBehaviour
     public int scoreToAdd = 10;
     public ScoreKeeper scoreKeeper;
 
+    void Start()
+    {
+;       GameObject scoreKeeperObject = GameObject.FindGameObjectWithTag("ScoreKeeper");
+
+
+        scoreKeeper = scoreKeeperObject.GetComponent<ScoreKeeper>();
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
 

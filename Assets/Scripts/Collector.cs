@@ -24,12 +24,10 @@ public class Collector : MonoBehaviour
         //Fruit
         else if (collectibleType == CollectibleType.Fruit)
         {
-            Debug.Log("Picked up a fruit!");
         }
         // Rotten Fruit
         else if (collectibleType == CollectibleType.RottenFruit)
         {
-            Debug.Log("Picked up a rotten fruit!");
 
             Destructible destructible = GetComponent<Destructible>();
 

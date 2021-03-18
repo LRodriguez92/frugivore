@@ -45,7 +45,6 @@ public class Destructible : MonoBehaviour
             Die();
         }
 
-        Debug.Log(currentHitPoints);
     }
 
     private void Die()
@@ -55,7 +54,6 @@ public class Destructible : MonoBehaviour
             gameController.GameOver();
         }
 
-        Debug.Log("You lose!");
         Destroy(gameObject, 0.1f);
     }
 }
