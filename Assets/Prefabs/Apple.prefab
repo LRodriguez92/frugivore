@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2925647472102009570}
   - component: {fileID: -1551270062510077396}
   - component: {fileID: -3870024937427187563}
+  - component: {fileID: -3461824613198902360}
   m_Layer: 0
   m_Name: Apple
   m_TagString: Untagged
@@ -149,3 +150,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maximumHitPoints: 1
+  gameController: {fileID: 0}
+--- !u!114 &-3461824613198902360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2925647472102009571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12eb0203e1d904e00b76c7b3509a6478, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreToAdd: 0
+  scoreKeeper: {fileID: 0}

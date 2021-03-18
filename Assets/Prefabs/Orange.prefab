@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 3701885688407341047}
   - component: {fileID: -3293701553043563243}
   - component: {fileID: -3082054972441833815}
+  - component: {fileID: 3804957486503941524}
+  - component: {fileID: 2672206510350031692}
   m_Layer: 0
   m_Name: Orange
   m_TagString: Untagged
@@ -149,3 +151,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maximumHitPoints: 1
+  gameController: {fileID: 0}
+--- !u!114 &3804957486503941524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3701885688407341034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12eb0203e1d904e00b76c7b3509a6478, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreToAdd: 0
+  scoreKeeper: {fileID: 0}
+--- !u!114 &2672206510350031692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3701885688407341034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12eb0203e1d904e00b76c7b3509a6478, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreToAdd: 10
+  scoreKeeper: {fileID: 0}
