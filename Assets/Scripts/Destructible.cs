@@ -8,6 +8,8 @@ public class Destructible : MonoBehaviour
 
     private int currentHitPoints;
 
+    public GameController gameController;
+
     public int GetCurrentHitPoints()
     {
         return currentHitPoints;
@@ -48,7 +50,12 @@ public class Destructible : MonoBehaviour
 
     private void Die()
     {
-        //Could add animation here!
-        Destroy(gameObject);
+        if (gameObject.tag == "Player")
+        {
+            gameController.GameOver();
+        }
+
+        Debug.Log("You lose!");
+        Destroy(gameObject, 0.1f);
     }
 }
